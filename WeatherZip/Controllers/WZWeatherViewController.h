@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  WeatherViewController.h
 //  WeatherZip
 //
 //  Created by Chesley Stephens on 1/30/17.
@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface WZWeatherViewController : UIViewController
 
+@property (nonatomic, strong) NSString *zipCode;
 
 @end
-
