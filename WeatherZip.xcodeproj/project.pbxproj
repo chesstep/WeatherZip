@@ -12,7 +12,7 @@
 		FB22DF001E402A1E00354F9C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB22DEFE1E402A1E00354F9C /* Main.storyboard */; };
 		FB22DF021E402A1E00354F9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB22DF011E402A1E00354F9C /* Assets.xcassets */; };
 		FB22DF051E402A1E00354F9C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB22DF031E402A1E00354F9C /* LaunchScreen.storyboard */; };
-		FB22DF101E402A1E00354F9C /* WeatherZipTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FB22DF0F1E402A1E00354F9C /* WeatherZipTests.m */; };
+		FB22DF101E402A1E00354F9C /* WZWeatherServiceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FB22DF0F1E402A1E00354F9C /* WZWeatherServiceTests.m */; };
 		FB22DF271E402B5800354F9C /* WZZipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB22DF231E402B5800354F9C /* WZZipViewController.m */; };
 		FB22DF2A1E402B9400354F9C /* WZWeatherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB22DF291E402B9400354F9C /* WZWeatherViewController.m */; };
 		FB22DF531E40303400354F9C /* NSDictionary+ObjectMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = FB22DF3C1E40303400354F9C /* NSDictionary+ObjectMapper.m */; };
@@ -50,7 +50,7 @@
 		FB22DF041E402A1E00354F9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FB22DF061E402A1E00354F9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FB22DF0B1E402A1E00354F9C /* WeatherZipTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatherZipTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FB22DF0F1E402A1E00354F9C /* WeatherZipTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeatherZipTests.m; sourceTree = "<group>"; };
+		FB22DF0F1E402A1E00354F9C /* WZWeatherServiceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WZWeatherServiceTests.m; sourceTree = "<group>"; };
 		FB22DF111E402A1E00354F9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FB22DF221E402B5800354F9C /* WZZipViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZZipViewController.h; sourceTree = "<group>"; };
 		FB22DF231E402B5800354F9C /* WZZipViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZZipViewController.m; sourceTree = "<group>"; };
@@ -151,7 +151,7 @@
 		FB22DF0E1E402A1E00354F9C /* WeatherZipTests */ = {
 			isa = PBXGroup;
 			children = (
-				FB22DF0F1E402A1E00354F9C /* WeatherZipTests.m */,
+				FB22DF0F1E402A1E00354F9C /* WZWeatherServiceTests.m */,
 				FB22DF111E402A1E00354F9C /* Info.plist */,
 			);
 			path = WeatherZipTests;
@@ -413,7 +413,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB22DF101E402A1E00354F9C /* WeatherZipTests.m in Sources */,
+				FB22DF101E402A1E00354F9C /* WZWeatherServiceTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
