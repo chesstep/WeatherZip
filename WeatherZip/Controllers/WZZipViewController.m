@@ -42,13 +42,18 @@
 - (void)addButtonPressed:(id)sender {
     UIAlertController *alertController = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"Zip Code Entry", @"") message:NSLocalizedString(@"Please enter a zip code", @"") preferredStyle:UIAlertControllerStyleAlert];
     [alertController addTextFieldWithConfigurationHandler:^(UITextField *textField) {
-         textField.placeholder = NSLocalizedString(@"Zip code", @"");
-     }];
+        textField.placeholder = NSLocalizedString(@"Zip code", @"");
+        textField.keyboardType = UIKeyboardTypeNumberPad;
+    }];
     
     UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"Cancel", @"") style:UIAlertActionStyleCancel handler:nil];
 
     UIAlertAction *okAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"OK", @"") style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
         UITextField *zipCodeField = alertController.textFields.firstObject;
+        if (zipCodeField.text == nil || zipCodeField.text.length == 0) {
+            return;
+        }
+        
         self.selectedZipCode = zipCodeField.text;
         [self performSegueWithIdentifier:NSStringFromClass([WZWeatherViewController class]) sender:self];
         
